@@ -38,7 +38,14 @@ Dopo aver raccolto ed elaborato i dati, e’ il momento di mostrare i risultati 
 
 */
 
+
+
 // NON MODIFICARE QUESTO ARRAY!
+const jobPosition = document.querySelector("#jobPosition");
+const jobLocation = document.querySelector("#jobLocation");
+const btn = document.querySelector("#btn");
+const printe = document.querySelector("#printe");
+
 const jobs = [
   { title: "Marketing Intern", location: "US, NY, New York" },
   {
@@ -126,12 +133,12 @@ const jobs = [
   },
 ]
 
-function jobResearch(title, location){
+function jobResearch(title, location) {
   let result = [];
   let count = 0;
-  jobs.forEach(function(job){
-    if (job.title.toLowerCase().includes(title.toLowerCase()) && job.location.toLocaleLowerCase().includes(location.toLowerCase())){
-      result.push(job.title, job.location);
+  jobs.forEach(function (job) {
+    if (job.title.toLowerCase().includes(title.toLowerCase()) && job.location.toLocaleLowerCase().includes(location.toLowerCase())) {
+      result.push(job.title + job.location);
       count++;
     }
   });
@@ -139,10 +146,13 @@ function jobResearch(title, location){
     title: result,
     counter: count
   };
-  return resultResearch;
-  }
+  if (count === 0){
+    printe.innerText = "Al momento non è presente nessun lavoro con questi parametri di ricerca";
+  } else {
 
-  console.log(jobResearch("dev", "uS"));
+  }
+  return resultResearch;
+}
 
 /*function jobResearch(title,location){
   let result = [];
@@ -163,3 +173,14 @@ function jobResearch(title, location){
 }
 
 console.log(jobResearch("dev", "uS"));*/
+
+
+btn.addEventListener("click", () => {
+  let title = jobPosition.value;
+  let location = jobLocation.value;
+
+  
+
+
+  console.log(jobResearch(title, location));
+})
