@@ -1,50 +1,10 @@
-/*
-PARTE 1: 
-Oggi analizzeremo un problema molto comune: realizzare algoritmi di ricerca.
-Il tuo compito è creare una funzione che cercherà per posizione lavorativa E posizione geografica. 
-Questi due valori verranno passati come parametri
-Ti abbiamo fornito un array chiamato "jobs" in fondo al file, NON modificarlo in alcun modo.
-L'algoritmo che devi realizzare cercherà SIA per posizione lavorativa che per posizione geografica.
-Prendi queste tre inserzioni ad esempio:
 
-      job1:  location: "NY, US",     title: "java dev"
-      job2:  location: "Genoa, IT"   title: "web dev"
-      job3:  location: "US"      title: "dev"
-
-Cercando contemporaneamente come posizione lavorativa "dev" e posizione geografica "US", dovresti ottenere come risultato solamente job1 e job3,
-in quanto job2 non soddisfa la condizione posta sulla posizione geografica.
-
-REQUISITI:
-- il tuo algoritmo deve tornare i risultati nella seguente forma:
-{
-  result: [], <-- inserisci qui le inserzioni che rispecchiano la posizione lavorativa e la posizione geografica richiesta
-  count: 0 <-- inserisci qui il numero totale delle inserzioni trovate
-}
-
-- la tua ricerca deve essere "case insensitive" (non deve essere influenzata da lettere maiuscole o minuscole nelle parole cercate).
- Questo e' possibile trasformando tutto in lettere minuscole con .toLowerCase()
-
-
-PARTE 2: 
-Nella pagina HTML, inserisci 2 input di tipo testo (uno per la location e uno per il titolo lavorativo, ricordati di diversificarli con un id)
-e un bottone con valore “cerca”
-
-Al click del bottone, il codice deve raccogliere i valori dei due input e darli in pasto alla funzione che hai creato nella parte 1. 
-
-Dopo aver raccolto ed elaborato i dati, e’ il momento di mostrare i risultati sulla pagina: 
-    Puoi scegliere tu se utilizzare un semplice ul / li oppure una tabella 
-    Vai passo per passo e usa molti console.log per capire eventualmente dove sbagli
-    SUGGERIMENTO: ti servira’ un ciclo for!
-
-*/
-
-
-
-// NON MODIFICARE QUESTO ARRAY!
 const jobPosition = document.querySelector("#jobPosition");
 const jobLocation = document.querySelector("#jobLocation");
 const btn = document.querySelector("#btn");
 const printe = document.querySelector("#printe");
+const ulStamp = document.createElement("ul");
+
 
 const jobs = [
   { title: "Marketing Intern", location: "US, NY, New York" },
@@ -134,25 +94,46 @@ const jobs = [
 ]
 
 function jobResearch(title, location) {
+  ulStamp.innerHTML = "";
   let result = [];
   let count = 0;
   jobs.forEach(function (job) {
     if (job.title.toLowerCase().includes(title.toLowerCase()) && job.location.toLocaleLowerCase().includes(location.toLowerCase())) {
       result.push(job.title + job.location);
       count++;
+      const liStamp = ulStamp.appendChild(document.createElement("li"));
+      liStamp.appendChild(document.createTextNode(job.title + " " + job.location));
     }
+    if (count === 1){
+      printe.innerText = `E' stato trovato ${count.toString()} risultato`;
+    } else {
+    printe.innerText = `Sono stati trovati ${count.toString()} risultati`;
+    }
+    printe.appendChild(ulStamp);
   });
   let resultResearch = {
     title: result,
     counter: count
   };
   if (count === 0){
-    printe.innerText = "Al momento non è presente nessun lavoro con questi parametri di ricerca";
-  } else {
-
+    printe.innerText = "Al momento non è presente nessun lavoro con questi parametri";
   }
   return resultResearch;
 }
+
+btn.addEventListener("click", () => {
+  printe.innerHTML = "";
+  let title = jobPosition.value;
+  let location = jobLocation.value;
+
+  console.log(jobResearch(title, location));
+})
+
+
+
+
+
+// PROVE CON FOR E FOREACH DELLA FUNZIONE DI RICERCA
 
 /*function jobResearch(title,location){
   let result = [];
@@ -173,14 +154,3 @@ function jobResearch(title, location) {
 }
 
 console.log(jobResearch("dev", "uS"));*/
-
-
-btn.addEventListener("click", () => {
-  let title = jobPosition.value;
-  let location = jobLocation.value;
-
-  
-
-
-  console.log(jobResearch(title, location));
-})

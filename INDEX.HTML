@@ -9,60 +9,340 @@
 </head>
 
 <body>
+    <!-- HEADER CON LOGO E REGISTRAZIONE E LOG IN -->
     <header>
-        <h1>JOB FINDER</h1>
-        <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                <path d="M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328"
-                    fill="none" stroke="bisque" stroke-linejoin="round" stroke-width="32" />
-                <path d="M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z" fill="none"
-                    stroke="bisque" stroke-linejoin="round" stroke-width="32" />
-                <path fill="none" stroke="bisque" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
-                    d="M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192" />
-                <path d="M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z" />
-            </svg>
+        <div class="left">
+            <h1>JOB FINDER</h1>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <path d="M336 80H176a16 16 0 00-16 16v16h192V96a16 16 0 00-16-16z" fill="none" />
+                    <path
+                        d="M496 176a64.07 64.07 0 00-64-64h-48V96a48.05 48.05 0 00-48-48H176a48.05 48.05 0 00-48 48v16H80a64.07 64.07 0 00-64 64v48h480zm-144-64H160V96a16 16 0 0116-16h160a16 16 0 0116 16zM336 264a24 24 0 01-24 24H200a24 24 0 01-24-24v-4a4 4 0 00-4-4H16v144a64 64 0 0064 64h352a64 64 0 0064-64V256H340a4 4 0 00-4 4z"
+                        fill="bisque" />
+                </svg>
+            </div>
+        </div>
+        <div class="right">
+            <a href="">Sign Up</a>
+            <a href="">Sign In</a>
+        </div>
         </div>
     </header>
 
+    <!-- MAIN CON DESCRIZIONE, CONTAINER INPUT E RECENSIONI UTENTI-->
+
     <main>
         <div class="description">
-            <p>Job Finder è un sito innovativo che può aiutarti a trovare il lavoro che fa per te!<br>Il nostro algoritmo può aiutarti a trovare 
-            il lavoro che stai cercando in due<br>semplici passi.<br>COMPILA I DUE CAMPI SOTTOSTANTI INSERENDO LA POSIZIONE LAVORATIVA CHE STAI CERCANDO<br>
-            E LA POSIZIONE GEOGRAFICA DI TUO GRADIMENTO<br>In seguito clicca su cerca e attendi che l'algoritmo di indichi le posizioni aperte!
+            <p>
+                <strong>Scopri il lavoro dei tuoi sogni con Job Finder!</strong> Il nostro algoritmo gratuito ti guiderà
+                in soli due semplici passi.
+                <br><br>
+                <strong>1. Compila i campi qui sotto:</strong> Inserisci il tipo di lavoro che stai cercando e la tua
+                posizione geografica preferita.
+                <br><br>
+                <strong>2. Clicca su "Cerca" e lascia fare a noi:</strong> L'algoritmo troverà le migliori opportunità
+                lavorative per te!
+                <br><br>
+                <strong>Nota:</strong> Se non trovi subito delle posizioni aperte, prova a modificare i tuoi parametri
+                di ricerca.
+                <br>
+                Per risultati ottimali, utilizza le sigle dei paesi altrimenti indica la città effettiva.
+                <br>
+                Ad esempio: ITALIA - (IT), GERMANIA - (DE), STATI UNITI - (US)...
+
+
+
+            </p>
         </div>
-        <div id="container">
-            <div class="input">
-                <input type="text" placeholder="Posizione lavorativa" id="jobPosition">
-                <div class="loghi lavorativa">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                        <path
-                            d="M277.42 247a24.68 24.68 0 00-4.08-5.47L255 223.44a21.63 21.63 0 00-6.56-4.57 20.93 20.93 0 00-23.28 4.27c-6.36 6.26-18 17.68-39 38.43C146 301.3 71.43 367.89 37.71 396.29a16 16 0 00-1.09 23.54l39 39.43a16.13 16.13 0 0023.67-.89c29.24-34.37 96.3-109 136-148.23 20.39-20.06 31.82-31.58 38.29-37.94a21.76 21.76 0 003.84-25.2zM478.43 201l-34.31-34a5.44 5.44 0 00-4-1.59 5.59 5.59 0 00-4 1.59h0a11.41 11.41 0 01-9.55 3.27c-4.48-.49-9.25-1.88-12.33-4.86-7-6.86 1.09-20.36-5.07-29a242.88 242.88 0 00-23.08-26.72c-7.06-7-34.81-33.47-81.55-52.53a123.79 123.79 0 00-47-9.24c-26.35 0-46.61 11.76-54 18.51-5.88 5.32-12 13.77-12 13.77a91.29 91.29 0 0110.81-3.2 79.53 79.53 0 0123.28-1.49C241.19 76.8 259.94 84.1 270 92c16.21 13 23.18 30.39 24.27 52.83.8 16.69-15.23 37.76-30.44 54.94a7.85 7.85 0 00.4 10.83l21.24 21.23a8 8 0 0011.14.1c13.93-13.51 31.09-28.47 40.82-34.46s17.58-7.68 21.35-8.09a35.71 35.71 0 0121.3 4.62 13.65 13.65 0 013.08 2.38c6.46 6.56 6.07 17.28-.5 23.74l-2 1.89a5.5 5.5 0 000 7.84l34.31 34a5.5 5.5 0 004 1.58 5.65 5.65 0 004-1.58L478.43 209a5.82 5.82 0 000-8z"
-                            fill="none" stroke="bisque" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="32" />
-                    </svg>
+
+        <h2>INIZIA LA RICERCA ORA!</h2>
+        <div class="container-del-container">
+            <div class="fotina">
+                <img src="trova.png" alt="foto">
+            </div>
+            <div id="container">
+                <div class="input">
+                    <input type="text" placeholder="Posizione lavorativa" id="jobPosition">
+                    <div class="loghi lavorativa">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <path
+                                d="M277.42 247a24.68 24.68 0 00-4.08-5.47L255 223.44a21.63 21.63 0 00-6.56-4.57 20.93 20.93 0 00-23.28 4.27c-6.36 6.26-18 17.68-39 38.43C146 301.3 71.43 367.89 37.71 396.29a16 16 0 00-1.09 23.54l39 39.43a16.13 16.13 0 0023.67-.89c29.24-34.37 96.3-109 136-148.23 20.39-20.06 31.82-31.58 38.29-37.94a21.76 21.76 0 003.84-25.2zM478.43 201l-34.31-34a5.44 5.44 0 00-4-1.59 5.59 5.59 0 00-4 1.59h0a11.41 11.41 0 01-9.55 3.27c-4.48-.49-9.25-1.88-12.33-4.86-7-6.86 1.09-20.36-5.07-29a242.88 242.88 0 00-23.08-26.72c-7.06-7-34.81-33.47-81.55-52.53a123.79 123.79 0 00-47-9.24c-26.35 0-46.61 11.76-54 18.51-5.88 5.32-12 13.77-12 13.77a91.29 91.29 0 0110.81-3.2 79.53 79.53 0 0123.28-1.49C241.19 76.8 259.94 84.1 270 92c16.21 13 23.18 30.39 24.27 52.83.8 16.69-15.23 37.76-30.44 54.94a7.85 7.85 0 00.4 10.83l21.24 21.23a8 8 0 0011.14.1c13.93-13.51 31.09-28.47 40.82-34.46s17.58-7.68 21.35-8.09a35.71 35.71 0 0121.3 4.62 13.65 13.65 0 013.08 2.38c6.46 6.56 6.07 17.28-.5 23.74l-2 1.89a5.5 5.5 0 000 7.84l34.31 34a5.5 5.5 0 004 1.58 5.65 5.65 0 004-1.58L478.43 209a5.82 5.82 0 000-8z"
+                                fill="none" stroke="bisque" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="Posizione geografica" id="jobLocation">
+                    <div class="loghi">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <path
+                                d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
+                                fill="none" stroke="bisque" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                            <circle cx="256" cy="192" r="48" fill="none" stroke="bisque" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="32" />
+                        </svg>
+                    </div>
                 </div>
-                <input type="text" placeholder="Posizione geografica" id="jobLocation">
-                <div class="loghi">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                        <path
-                            d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
-                            fill="none" stroke="bisque" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="32" />
-                        <circle cx="256" cy="192" r="48" fill="none" stroke="bisque" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="32" />
-                    </svg>
+
+                <button id="btn">CERCA</button>
+                <div id="printe">
+
                 </div>
             </div>
+            
+        </div>
 
-            <button id="btn">CERCA</button>
-            <div id="printe">
+        <!-- CARDS CON LE RECENSIONI -->
+        <h3>Dai un'occhiata alle recensioni degli utenti che hanno usufruito del nostro servizio!</h3>
+        <div class="recensioni">
+            <div class="card">
+                <div class="foto-stelle">
+                    <div class="img">
+                        <img src="jobs.png" alt="foto profilo">
+                    </div>
+                    <div class="stelle">
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                                    fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                                <path d="M256 48v316L118 464l54-160-140-96h172l52-160z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <span class="nominativi">Steve Jobs</span>
+                <span>SEMPLICEMENTE FANTASTICO! Sono riuscito a trovare un posto alla Apple grazie al vostro
+                    algoritmo</span>
+            </div>
 
+            <div class="card">
+                <div class="foto-stelle">
+                    <div class="img">
+                        <img src="musk.jpg" alt="foto profilo">
+                    </div>
+                    <div class="stelle">
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                                    fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <span class="nominativi">Elon Musk</span>
+                <span>Grazie a Job Finder ora posso vantarmi di essere uno degli uomini più ricchi del pianeta! Non
+                    smetterò mai di ringraziarvi</span>
+            </div>
+
+            <div class="card">
+                <div class="foto-stelle">
+                    <div class="img">
+                        <img src="gates.jpg" alt="foto profilo">
+                    </div>
+                    <div class="stelle">
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <span class="nominativi">Bill Gates</span>
+                <span>Metto solo 5 stelle perchè purtroppo non se ne possono mettere di più. Vorrei assumere il
+                    programmatore che ha programmato questo algoritmo.</span>
+            </div>
+
+            <div class="card">
+                <div class="foto-stelle">
+                    <div class="img">
+                        <img src="totti.jpg" alt="foto profilo">
+                    </div>
+                    <div class="stelle">
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                                    fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                                <path d="M256 48v316L118 464l54-160-140-96h172l52-160z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <span class="nominativi">Francesco Totti</span>
+                <span>Grandi regà! GRAZIE JOB FINDER, sono riuscito a sottoscrivere un contratto milionario con l'AS
+                    ROMA. CONSIGLIATISSIMO</span>
+            </div>
+
+            <div class="card">
+                <div class="foto-stelle">
+                    <div class="img">
+                        <img src="ursula.jpg" alt="foto profilo">
+                    </div>
+                    <div class="stelle">
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path
+                                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                            </svg>
+                        </div>
+                        <div class="singole-stelle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <path d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                                    fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                                <path d="M256 48v316L118 464l54-160-140-96h172l52-160z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <span class="nominativi">Ursula von der Leyen</span>
+                <span>Ero molto scettica all'inizio, ma ora mi sono ricreduta! Job Finder è il migliore, attualmente
+                    sono la presidente della Commissione europea grazie a voi!</span>
             </div>
         </div>
     </main>
-
+    <!-- FOOTER -->
     <footer>
+        <div class="lista-footer">
+            <ul>
+                <li>
+                    <a href="">Carriere</a>
+                </li>
+                <li>
+                    <a href="">Lavora con noi</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">Le domande più frequenti</a>
+                </li>
+                <li>
+                    <a href="">Per le aziende</a>
+                </li>
+                <li>
+                    <a href="">Privacy</a>
+                </li>
 
+            </ul>
+        </div>
+        <div class="indirizzo">
+            <p>Via Roma 100, 00190<br>Cellulare: 327 8765324<br>Email: jobfinder@gmail.com</p>
+
+        </div>
     </footer>
 
     <script src="scaricabile.js"></script>
