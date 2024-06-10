@@ -95,6 +95,11 @@ const jobs = [
 
 function jobResearch(title, location) {
   ulStamp.innerHTML = "";
+
+  if (title === "" || location === "") {
+    return printe.innerText = "Attenzione devi inserire entrambi i parametri!";
+  }
+
   let result = [];
   let count = 0;
   jobs.forEach(function (job) {
@@ -104,6 +109,7 @@ function jobResearch(title, location) {
       const liStamp = ulStamp.appendChild(document.createElement("li"));
       liStamp.appendChild(document.createTextNode(job.title + " " + job.location));
     }
+
     if (count === 1){
       printe.innerText = `E' stato trovato ${count.toString()} risultato`;
     } else {
